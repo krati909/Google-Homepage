@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <script>
+            function plus()
+            {
+                n1=parseInt(document.f1.N1.value)
+                n2=parseInt(document.f1.N2.value)
+                N3=n1+n2
+                document.write("value=" +N3)
+                
+            }
+            function sub()
+            {
+                n1=parseInt(document.f1.N1.value)
+                n2=parseInt(document.f1.N2.value)
+                N3=n1-n2
+                document.write("value=" +N3)
+                
+            }
+            function mul()
+            {
+                n1=parseInt(document.f1.N1.value)
+                n2=parseInt(document.f1.N2.value)
+                N3=n1*n2
+                document.write("value=" +N3)
+                
+            }
+            function divide()
+            {
+                n1=parseInt(document.f1.N1.value)
+                n2=parseInt(document.f1.N2.value)
+                N3=n1/n2
+                document.write("value=" +N3)
+                
+            }
+            function mod()
+            {
+                n1=parseInt(document.f1.N1.value)
+                n2=parseInt(document.f1.N2.value)
+                N3=n1%n2
+                document.write("value=" +N3)
+                
+            }
+        </script>
+        <form name=f1 >
+            enter a number<input type="text" name ="N1">
+            enter another number<input type="text" name ="N2">
+            <input type="button" value ="+" onclick="plus()">
+            <input type="button" value ="-" onclick="sub()">
+            <input type="button" value ="X" onclick="mul()">
+            <input type="button" value ="/" onclick="divide()">
+            <input type="button" value ="%" onclick="mod()">
+            <input type="submit" value ="=">
+        </form>
+        
+    </body>
+</html>
